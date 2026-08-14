@@ -1,9 +1,4 @@
-export type MediaAsset = {
-  type: "image" | "video";
-  src: string;
-  alt?: string;
-  poster?: string;
-};
+import type { MediaAsset } from "../types/site";
 
 export const siteData = {
   brand: {
@@ -111,7 +106,7 @@ export const siteData = {
     booking: {
       title: "Book your service now",
       text: "Fast. Reliable. Professional.",
-      cta: { label: "Book on WhatsApp", href: "https://wa.me/919618011099" },
+      cta: { label: "Book on WhatsApp", href: "https://wa.me/919618011099", style: "primary" },
     },
   },
   gallery: {
