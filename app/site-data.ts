@@ -1,0 +1,171 @@
+export type MediaAsset = {
+  type: "image" | "video";
+  src: string;
+  alt?: string;
+  poster?: string;
+};
+
+export const siteData = {
+  brand: {
+    mark: "SS",
+    name: "STYK STAK",
+    highlight: "STAK",
+    tagline: "Drums Detailing",
+    whatsappUrl: "https://wa.me/919618011099",
+  },
+  navigation: [
+    { label: "Home", href: "#top" },
+    { label: "Rental", href: "#rental" },
+    { label: "Detailing", href: "#detailing" },
+    { label: "Gallery", href: "#gallery" },
+    { label: "About", href: "#about" },
+    { label: "Contact", href: "#contact" },
+  ],
+  home: {
+    eyebrow: "Stage ready. Professionally cared.",
+    title: "Premium Drum Rentals & Professional Detailing",
+    highlight: "Drum Rentals",
+    text: "Tuned kits, spotless hardware, and reliable Hyderabad delivery for gigs, events, studios, and practice sessions.",
+    media: {
+      type: "image",
+      src: "/home-reference.png",
+      alt: "Tama drum kit in a dark studio",
+    } satisfies MediaAsset,
+    actions: [
+      { label: "Rent a Drum Kit", href: "https://wa.me/919618011099", style: "primary" },
+      { label: "Book Detailing", href: "#detailing", style: "ghost" },
+    ],
+    highlights: ["Premium drum kits", "Professionally detailed", "On time, every time"],
+    features: [
+      { label: "Clean", icon: "C", text: "Professionally cleaned kits and hardware." },
+      { label: "Tuned", icon: "T", text: "Perfectly tuned for best sound." },
+      { label: "Reliable", icon: "R", text: "On-time service for every booking." },
+      { label: "Quality", icon: "Q", text: "Top brands in excellent condition." },
+    ],
+  },
+  rental: {
+    id: "rental",
+    eyebrow: "Drum kit rental",
+    title: "TAMA Imperialstar Rental",
+    highlight: "Rental",
+    text: "High quality kits for gigs, events, studio sessions, and more.",
+    kitName: "TAMA Imperialstar",
+    media: {
+      type: "image",
+      src: "/rental-reference.png",
+      alt: "Tama Imperialstar rental kit",
+    } satisfies MediaAsset,
+    includedItems: [
+      "22 inch Bass Drum",
+      "10 inch and 12 inch Tom Toms",
+      "16 inch Floor Tom",
+      "14 inch Snare Drum",
+      "Hi Hat Stand",
+      "2 Boom Stands",
+      "1 Crash Stand",
+      "Kick Pedal (Tama)",
+      "Tama Throne",
+    ],
+    gear: [
+      { kicker: "S-Series", label: "S-Series Cymbals" },
+      { kicker: "Hi Hat", label: "Hi Hat Stand" },
+      { kicker: "2 Boom", label: "2 Boom Stands" },
+      { kicker: "1 Crash", label: "1 Crash Stand" },
+      { kicker: "Kick", label: "Kick Pedal" },
+      { kicker: "Tama", label: "Tama Throne" },
+    ],
+  },
+  detailing: {
+    id: "detailing",
+    eyebrow: "Professional care",
+    title: "Our Detailing Services",
+    highlight: "Services",
+    text: "Deep cleaning, repair-minded detailing, and tuning for your drums.",
+    services: [
+      {
+        title: "Shell & Hardware Cleaning",
+        text: "Strip down the kit to clean, polish, and de-grease shells, hoops, lugs, and tension rods.",
+        media: { type: "image", src: "/detailing-reference.png", alt: "Clean red drum shell" },
+      },
+      {
+        title: "Rust & Corrosion Removal",
+        text: "Treat oxidised chrome or metal hardware to restore original shine and smoother motion.",
+        media: { type: "image", src: "/gallery-reference.png", alt: "Polished drum hardware" },
+      },
+      {
+        title: "Bearing Edge Care",
+        text: "Clean and lubricate the contact edge where the head meets the shell for cleaner tone.",
+        media: { type: "image", src: "/rental-reference.png", alt: "Drum bearing edge care" },
+      },
+      {
+        title: "Cymbal Restoration",
+        text: "Deep cleaning and polishing with specialist non-abrasive finishes.",
+        media: { type: "image", src: "/gallery-reference.png", alt: "Restored cymbals" },
+      },
+      {
+        title: "Tune-Up & Re-Heading",
+        text: "Professional reassembly, fresh heads, and expert tuning for a studio-ready sound.",
+        media: { type: "image", src: "/detailing-reference.png", alt: "Drum tune-up and re-heading" },
+      },
+    ],
+    booking: {
+      title: "Book your service now",
+      text: "Fast. Reliable. Professional.",
+      cta: { label: "Book on WhatsApp", href: "https://wa.me/919618011099" },
+    },
+  },
+  gallery: {
+    id: "gallery",
+    eyebrow: "Gallery",
+    title: "Before & After",
+    highlight: "After",
+    text: "See the difference professional care makes.",
+    filters: ["All", "Shells", "Hardware", "Cymbals", "Heads"],
+    items: [
+      { category: "Shells", state: "before", media: { type: "image", src: "/rental-reference.png", alt: "Shell before detailing" } },
+      { category: "Shells", state: "after", media: { type: "image", src: "/detailing-reference.png", alt: "Shell after detailing" } },
+      { category: "Hardware", state: "before", media: { type: "image", src: "/detailing-reference.png", alt: "Hardware before detailing" } },
+      { category: "Hardware", state: "after", media: { type: "image", src: "/gallery-reference.png", alt: "Hardware after detailing" } },
+      { category: "Cymbals", state: "before", media: { type: "image", src: "/gallery-reference.png", alt: "Cymbals before restoration" } },
+      { category: "Cymbals", state: "after", media: { type: "image", src: "/rental-reference.png", alt: "Cymbals after restoration" } },
+    ],
+  },
+  about: {
+    id: "about",
+    eyebrow: "About us",
+    title: "STYK STAK",
+    highlight: "STAK",
+    subtitle: "Drums Detailing",
+    text: "We are drummers who care about sound, quality, and performance. Every kit we rent is stage-ready, and every drum we service is treated with precision and passion.",
+    media: {
+      type: "image",
+      src: "/about-reference.png",
+      alt: "Drummer in studio lighting",
+    } satisfies MediaAsset,
+    values: ["Passion", "Quality", "Experience", "Reliability"],
+    stats: [
+      { value: "100+", label: "Kits Detailed" },
+      { value: "200+", label: "Happy Clients" },
+      { value: "5+", label: "Years Experience" },
+      { value: "100%", label: "Client Satisfaction" },
+    ],
+  },
+  contact: {
+    id: "contact",
+    eyebrow: "Contact / Booking",
+    title: "Get in Touch",
+    text: "For rentals, detailing, or any enquiries.",
+    whatsapp: { label: "WhatsApp: 9618011099", href: "https://wa.me/919618011099" },
+    instagram: { label: "Instagram: @the_incentivizer", href: "https://www.instagram.com/the_incentivizer" },
+    location: "Location: Hyderabad, India",
+    note: "Quick response on WhatsApp.",
+    mapLabel: "Hyderabad",
+    fields: [
+      { label: "Your Name", name: "name", type: "text" },
+      { label: "Phone Number", name: "phone", type: "tel" },
+      { label: "Event Date / Preferred Date", name: "date", type: "text" },
+      { label: "Your Message", name: "message", type: "textarea" },
+    ],
+    submitLabel: "Send Enquiry",
+  },
+} as const;
