@@ -1,12 +1,15 @@
 export type MediaAsset = {
-  type: "image" | "video";
-  src: string;
+  type: string;
+  imageKey?: string;
+  videoKey?: string;
+  src?: string;
   alt?: string;
+  posterKey?: string;
   poster?: string;
 };
 
 export type Action = {
   label: string;
   href: string;
-  style?: "primary" | "ghost";
+  style?: string;
 };
