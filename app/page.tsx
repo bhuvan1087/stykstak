@@ -6,6 +6,7 @@ import { GallerySection } from "../src/components/sections/GallerySection";
 import { HomeSection } from "../src/components/sections/HomeSection";
 import { RentalSection } from "../src/components/sections/RentalSection";
 import { SiteHeader } from "../src/components/sections/SiteHeader";
+import { SiteFooter } from "../src/components/sections/SiteFooter";
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
       <GallerySection gallery={siteData.gallery} />
       <AboutSection about={siteData.about} />
       <ContactSection contact={siteData.contact} />
+      <SiteFooter footer={siteData.footer} />
     </main>
   );
 }

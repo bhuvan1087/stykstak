@@ -1,6 +1,7 @@
 import { HighlightedText } from "../common/HighlightedText";
+import { ButtonLink } from "../common/ButtonLink";
 import { MediaPanel } from "../common/ConfiguredMedia";
-import type { MediaAsset } from "../../types/site";
+import type { Action, MediaAsset } from "../../types/site";
 
 type RentalSectionProps = {
   rental: {
@@ -11,7 +12,12 @@ type RentalSectionProps = {
     text: string;
     kitName: string;
     media: MediaAsset;
-    includedItems: readonly string[];
+    includedItems: readonly {
+      label: string;
+      quantity: number;
+      media: MediaAsset;
+    }[];
+    moreCta: Action;
     gear: readonly {
       kicker: string;
       label: string;
@@ -33,20 +39,18 @@ export function RentalSection({ rental }: RentalSectionProps) {
         <MediaPanel media={rental.media} className="kit-photo" />
         <div>
           <h3>{rental.kitName}</h3>
-          <ul className="check-list">
+          <ul className="rental-summary-list">
             {rental.includedItems.map((item) => (
-              <li key={item}>{item}</li>
+              <li key={item.label}>
+                <span>{item.label}</span>
+                <strong>{item.quantity > 1 ? `x${item.quantity}` : "Included"}</strong>
+              </li>
             ))}
           </ul>
         </div>
       </div>
-      <div className="gear-grid">
-        {rental.gear.map((gear) => (
-          <article key={gear.label}>
-            <span>{gear.kicker}</span>
-            <strong>{gear.label}</strong>
-          </article>
-        ))}
+      <div className="service-more-row">
+        <ButtonLink action={rental.moreCta} />
       </div>
     </section>
   );

@@ -1,13 +1,28 @@
 {
   "assets": {
     "images": {
-      "homeHero": "/home-reference.png",
-      "rentalKit": "/rental-reference.png",
-      "detailingShell": "/detailing-reference.png",
+      "homeHero": "/home-reference.jpg",
+      "rentalKit": "/rental-reference.jpg",
+      "detailingShell": "/detailing-reference.jfif",
       "galleryWork": "/gallery-reference.png",
       "aboutStudio": "/about-reference.png",
       "contactMap": "/contact-reference.png",
-      "socialPreview": "/og.png"
+      "socialPreview": "/og.png",
+      "shellHardwareCleaning": "/shellHardwareCleaning.png",
+      "rustCorrosionRemoval": "/rustCorrosionRemoval.png",
+      "bearingEdgeCare": "/bearingEdgeCare.png",
+      "cymbalRestoration": "/cymbalRestoration.png",
+      "tuneUpReHeading": "/tune-UpRe-Heading.png",
+      "bassDrum": "/bassDrum.png",
+      "tomTom10": "/tomToms.png",
+      "tomTom12": "/tomToms12.png",
+      "floorTom": "/floorTom.png",
+      "snareDrum": "/snareDrum.png",
+      "hiHatStand": "/hiHatStand.png",
+      "boomStand": "/boomStand.png",
+      "crashStand": "/crashStand.png",
+      "kickPedal": "/kickPedal.png",
+      "tamaThrone": "/tamaThrone.png"
     },
     "videos": {}
   },
@@ -19,12 +34,12 @@
     "whatsappUrl": "https://wa.me/919618011099"
   },
   "navigation": [
-    { "label": "Home", "href": "#top" },
-    { "label": "Rental", "href": "#rental" },
-    { "label": "Detailing", "href": "#detailing" },
-    { "label": "Gallery", "href": "#gallery" },
-    { "label": "About", "href": "#about" },
-    { "label": "Contact", "href": "#contact" }
+    { "label": "Home", "href": "/#top" },
+    { "label": "Rental", "href": "/rental" },
+    { "label": "Detailing", "href": "/detailing" },
+    { "label": "Gallery", "href": "/#gallery" },
+    { "label": "About", "href": "/#about" },
+    { "label": "Contact", "href": "/#contact" }
   ],
   "home": {
     "eyebrow": "Stage ready. Professionally cared.",
@@ -61,16 +76,58 @@
       "alt": "Tama Imperialstar rental kit"
     },
     "includedItems": [
-      "22 inch Bass Drum",
-      "10 inch and 12 inch Tom Toms",
-      "16 inch Floor Tom",
-      "14 inch Snare Drum",
-      "Hi Hat Stand",
-      "2 Boom Stands",
-      "1 Crash Stand",
-      "Kick Pedal (Tama)",
-      "Tama Throne"
+      {
+        "label": "22 inch Bass Drum",
+        "quantity": 1,
+        "media": { "type": "image", "imageKey": "bassDrum", "alt": "22 inch bass drum" }
+      },
+      {
+        "label": "10 inch Tom Tom",
+        "quantity": 1,
+        "media": { "type": "image", "imageKey": "tomTom10", "alt": "10 inch tom tom" }
+      },
+      {
+        "label": "12 inch Tom Tom",
+        "quantity": 1,
+        "media": { "type": "image", "imageKey": "tomTom12", "alt": "12 inch tom tom" }
+      },
+      {
+        "label": "16 inch Floor Tom",
+        "quantity": 1,
+        "media": { "type": "image", "imageKey": "floorTom", "alt": "16 inch floor tom" }
+      },
+      {
+        "label": "14 inch Snare Drum",
+        "quantity": 1,
+        "media": { "type": "image", "imageKey": "snareDrum", "alt": "14 inch snare drum" }
+      },
+      {
+        "label": "Hi Hat Stand",
+        "quantity": 1,
+        "media": { "type": "image", "imageKey": "hiHatStand", "alt": "hi hat stand" }
+      },
+      {
+        "label": "Boom Stand",
+        "quantity": 2,
+        "media": { "type": "image", "imageKey": "boomStand", "alt": "boom stand" }
+      },
+      {
+        "label": "Crash Stand",
+        "quantity": 1,
+        "media": { "type": "image", "imageKey": "crashStand", "alt": "crash stand" }
+      },
+      {
+        "label": "Kick Pedal (Tama)",
+        "quantity": 1,
+        "media": { "type": "image", "imageKey": "kickPedal", "alt": "Tama kick pedal" }
+      },
+      {
+        "label": "Tama Throne",
+        "quantity": 1,
+        "media": { "type": "image", "imageKey": "tamaThrone", "alt": "Tama drum throne" }
+      }
     ],
+    "moreCta": { "label": "View More Details", "href": "/rental", "style": "primary" },
     "gear": [
       { "kicker": "S-Series", "label": "S-Series Cymbals" },
       { "kicker": "Hi Hat", "label": "Hi Hat Stand" },
@@ -90,29 +147,30 @@
       {
         "title": "Shell & Hardware Cleaning",
         "text": "Strip down the kit to clean, polish, and de-grease shells, hoops, lugs, and tension rods.",
-        "media": { "type": "image", "imageKey": "detailingShell", "alt": "Clean red drum shell" }
+        "media": { "type": "image", "imageKey": "shellHardwareCleaning", "alt": "Shell and hardware cleaning detail guide" }
       },
       {
         "title": "Rust & Corrosion Removal",
         "text": "Treat oxidised chrome or metal hardware to restore original shine and smoother motion.",
-        "media": { "type": "image", "imageKey": "galleryWork", "alt": "Polished drum hardware" }
+        "media": { "type": "image", "imageKey": "rustCorrosionRemoval", "alt": "Rust and corrosion removal detail guide" }
       },
       {
         "title": "Bearing Edge Care",
         "text": "Clean and lubricate the contact edge where the head meets the shell for cleaner tone.",
-        "media": { "type": "image", "imageKey": "rentalKit", "alt": "Drum bearing edge care" }
+        "media": { "type": "image", "imageKey": "bearingEdgeCare", "alt": "Bearing edge care detail guide" }
       },
       {
         "title": "Cymbal Restoration",
         "text": "Deep cleaning and polishing with specialist non-abrasive finishes.",
-        "media": { "type": "image", "imageKey": "galleryWork", "alt": "Restored cymbals" }
+        "media": { "type": "image", "imageKey": "cymbalRestoration", "alt": "Cymbal restoration detail guide" }
       },
       {
         "title": "Tune-Up & Re-Heading",
         "text": "Professional reassembly, fresh heads, and expert tuning for a studio-ready sound.",
-        "media": { "type": "image", "imageKey": "detailingShell", "alt": "Drum tune-up and re-heading" }
+        "media": { "type": "image", "imageKey": "tuneUpReHeading", "alt": "Tune-up and re-heading detail guide" }
       }
     ],
+    "moreCta": { "label": "View More Details", "href": "/detailing", "style": "primary" },
     "booking": {
       "title": "Book your service now",
       "text": "Fast. Reliable. Professional.",
@@ -172,5 +230,12 @@
       { "label": "Your Message", "name": "message", "type": "textarea" }
     ],
     "submitLabel": "Send Enquiry"
+  },
+  "footer": {
+    "text": "Follow STYK STAK on Instagram",
+    "instagram": {
+      "label": "@the_incentivizer",
+      "href": "https://www.instagram.com/the_incentivizer?igsh=MWVhYWdjM2VhMGM0MA==&igsi=MWVhYWdjM2VhMGM0MA=="
+    }
   }
 }
